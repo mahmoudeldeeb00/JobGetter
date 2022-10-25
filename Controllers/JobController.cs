@@ -35,7 +35,7 @@ namespace JobGetter.Controllers
             return result == "Good" ? Ok("Job opportunity Added Succesfully ") : BadRequest(result);
         }
       
-        [HttpGet("Time Line ")]
+        [HttpGet("GetMyjops")]
         public IActionResult TimeLine()
         {
             var UserName = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
